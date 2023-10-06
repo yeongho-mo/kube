@@ -1,9 +1,7 @@
 public class testCLass {
 
     pulbic void test(){
-        System.out.println(1111);
-
-        99
+        System.out.println(99999);
     }
 
 
