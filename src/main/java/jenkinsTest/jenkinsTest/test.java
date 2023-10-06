@@ -1,7 +1,7 @@
 public class testCLass {
 
     pulbic void test(){
-        System.out.println(106);
+        System.out.println(107);
     }
 
 
