@@ -15,7 +15,7 @@ pipeline {
         script {
           // Docker 빌드 단계
           def imageName = 'test-docker-image' // 이미지 이름 설정
-          def dockerfile = 'Dockerfile' // 도커파일 이름 (현재 디렉토리에 있음)
+          def dockerfile = 'jenkins/Dockerfile' // 도커파일 이름 (현재 디렉토리에 있음)
 
           // Docker 이미지 빌드
           sh "docker build -t $imageName -f $dockerfile ."
