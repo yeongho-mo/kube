@@ -20,10 +20,10 @@ pipeline {
           echo pwd
 
           // Docker 이미지 빌드
-          //sh "docker build -t $imageName -f $dockerfile ."
+          sh "docker build -t $imageName -f $dockerfile ."
 
           // Docker 이미지를 원격 레지스트리에 푸시 (선택적)
-          // echo "docker push $imageName 도커이미지 푸쉬"
+           echo "docker push $imageName 도커이미지 푸쉬"
         }
       }
     }
