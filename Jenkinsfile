@@ -5,8 +5,6 @@ pipeline {
       steps {
         sh 'chmod +x ./gradlew'
         sh './gradlew clean build'
-        sh 'whoami' // 현재 사용자 확인
-        sh 'pwd' // 현재 작업 디렉토리 위치 확인
       }
     }
 
@@ -15,7 +13,7 @@ pipeline {
         script {
           // Docker 빌드 단계
           def imageName = 'test-docker-image' // 이미지 이름 설정
-          def dockerfile = 'jenkins/Dockerfile' // 도커파일 이름 (현재 디렉토리에 있음)
+          def dockerfile = 'Dockerfile' // 도커파일 이름 (현재 디렉토리에 있음)
 
           echo pwd
 
