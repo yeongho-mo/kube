@@ -8,7 +8,7 @@ public class JenkinsTestApplication {
 
 	public static void main(String[] args) {
 		System.out.println("test123452226888");
-		System.out.println("12345677");
+		System.out.println("12345678");
 		SpringApplication.run(JenkinsTestApplication.class, args);
 	}
 
